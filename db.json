@@ -1,0 +1,113 @@
+{
+  "list": [
+    {
+      "id": 0,
+      "name": "Pino",
+      "price": 348,
+      "description": "pogoda good"
+    },
+    {
+      "id": 1,
+      "name": "Depo",
+      "price": 343,
+      "description": "pogoda good"
+    },
+    {
+      "id": 2,
+      "name": "Dino",
+      "price": 340,
+      "description": "pogoda good"
+    },
+    {
+      "id": 2,
+      "name": "BURITO",
+      "price": 21212,
+      "description": "pogoda good"
+    },
+    {
+      "id": 3,
+      "name": "Bilbo",
+      "price": 34,
+      "description": "pogoda good"
+    },
+    {
+      "name": "Olena",
+      "price": 3,
+      "description": "loshadka",
+      "id": 4,
+      "kulebyaka": 0.13
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 5
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 6
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 7
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 8
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 9
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 10
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 11
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 12
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 14
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 15
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 16
+    },
+    {
+      "name": "Pinokimaki",
+      "price": 8987876,
+      "description": "gooogle",
+      "id": 17
+    }
+  ]
+}
