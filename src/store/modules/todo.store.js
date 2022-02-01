@@ -15,7 +15,7 @@ const actions = {
       .get("todos")
       .then((res) => {
         console.log(res);
-        commit("SET_TODO_LIST", res.data);        
+        commit("SET_TODO_LIST", res.data);
       })
       .catch((error) => {
         console.error(error);
@@ -32,8 +32,8 @@ const actions = {
         console.error(error);
       });
   },
- 
-  PATCH_TODO({ dispatch }, {id, payload}) {
+
+  PATCH_TODO({ dispatch }, { id, payload }) {
     api
       .patch(`todos/${id}`, payload)
       .then(() => {
@@ -43,7 +43,7 @@ const actions = {
         console.error(error);
       });
   },
-  PUT_TODO({ dispatch }, {id, payload}) {
+  PUT_TODO({ dispatch }, { id, payload }) {
     api
       .put(`todos/${id}`, payload)
       .then(() => {

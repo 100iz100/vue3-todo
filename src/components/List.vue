@@ -45,7 +45,7 @@ export default {
   }),
   methods: {
     async openModalCreateHandler() {
-      const { createTodo } = this.$refs;      
+      const { createTodo } = this.$refs;
       const res = await createTodo.open();
       if (res) {
         this.$store.dispatch("todo/POST_TODO", this.todo);
@@ -59,10 +59,11 @@ export default {
     async editTodo(itemList) {
       Object.keys(this.todo).forEach((key) => (this.todo[key] = itemList[key]));
       const { createTodo } = this.$refs;
-      const { _id: id, title, description, completed } = itemList;
-      const payload = { title, description, completed };
+      const { _id: id } = itemList;
+
       const res = await createTodo.open();
       if (res) {
+        const payload = { ...this.todo };
         this.$store.dispatch("todo/PUT_TODO", { id, payload });
       }
       Object.keys(this.todo).forEach(
