@@ -1,6 +1,7 @@
 <template>
   <div class="item">
     <button @click="$emit('editTodo', item)">Edit</button>
+    <button @click="$emit('removeTodo', item)">Delete</button>    
     <h3>{{ item.title }}</h3>
     <!-- <span>{{ item.price }}</span> -->
     <input

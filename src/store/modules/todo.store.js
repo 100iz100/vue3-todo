@@ -10,16 +10,35 @@ const mutations = {
 };
 
 const actions = {
+  // GET_TODO_LIST({ commit }) {
+  //   api
+  //     .get("todos")
+  //     .then((res) => {
+  //       console.log(res);
+  //       commit("SET_TODO_LIST", res.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // },
+
   GET_TODO_LIST({ commit }) {
-    api
-      .get("todos")
-      .then((res) => {
-        console.log(res);
-        commit("SET_TODO_LIST", res.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    let response;
+    return new Promise((res) => {
+      response = res;
+      api
+        .get("todos")
+        .then((res) => {
+          console.log(res);
+          commit("SET_TODO_LIST", res.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          response(true);
+        });
+    });
   },
 
   POST_TODO({ dispatch }, payload) {
@@ -46,6 +65,16 @@ const actions = {
   PUT_TODO({ dispatch }, { id, payload }) {
     api
       .put(`todos/${id}`, payload)
+      .then(() => {
+        dispatch("GET_TODO_LIST");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  },
+  DELETE_TODO({ dispatch }, id) {
+    api
+      .delete(`todos/${id}`)
       .then(() => {
         dispatch("GET_TODO_LIST");
       })

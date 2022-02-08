@@ -11,9 +11,7 @@
 <script>
 
 export default {
-  beforeMount() {
-    this.$store.dispatch("todo/GET_TODO_LIST");
-  },
+  
 };
 </script>
 
